@@ -10,8 +10,11 @@ int main(){
   
   CustomString::String str1("i");
   CustomString::String str2(" am");
+  CustomString::String str3("big");
+  str3 +=" pig";
   str1 +=str2 += " a human";
   cout <<str1<<endl;
+  cout <<str3<<endl;
 
   return 0;
 }

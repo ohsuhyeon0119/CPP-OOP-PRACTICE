@@ -39,7 +39,7 @@ class String{
       assert(p !=nullptr);
       strcpy(p,str);
       strcat(p, s.str);
-      delete str;
+      delete []str; // str은 배열을 가리키고 있으므로 []를 붙여줘야 함
       str = p; // 포인터가 새로운 메모리 공간을 가리킨다.
       return *this; // this는 생성된 객체를 가리키는 포인터. *this는 객체 자신
     }
