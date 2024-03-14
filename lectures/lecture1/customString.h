@@ -33,7 +33,8 @@ class String{
     char* getStringPointer(){
       return str;
     }
-    String& operator+=(String & s){ // String&으로 반환타입을 적어주어야 참조값을 넘겨줄 수 있다.
+    String& operator+=(const String & s){ // String&으로 반환타입을 적어주어야 참조값을 넘겨줄 수 있다. 
+    // 참조자에 const를 붙이는 것은, 함수 내에서 참조하는 값을 변경하지 않도록 하는 선언이다.
       len += s.len;
       char * p = new char[len+1];
       assert(p !=nullptr);
