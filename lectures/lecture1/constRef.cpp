@@ -3,7 +3,7 @@ using namespace std;
 
 
 int main(){
-  int val1  = 1 ;
+  int val1  = 1;
   int val2 = 2;
   int& refVal1 = val1;
   // int &const refVal1 = val1;
@@ -16,6 +16,6 @@ int main(){
   cout<< val1<<endl;
 
   const int& constRef2 = 4; // 참조자를 const 선언하면, 임시변수를 받을 수 있다.(리터럴을 넘겨줄 수 있음)
-  
+
   return 0;
 } 

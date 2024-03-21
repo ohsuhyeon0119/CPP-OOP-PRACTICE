@@ -29,6 +29,8 @@ A a = b;
 // what if A &a = b;  -> callByRef 이므로, A 타입의 a 객체가 가리키는 것은 B타입의 객체 b이다. 복사 하지 않는다.
 
 A *pA = &b;
+// A Class의 포인터가 derived class B의 Object를 가리키고 있는 경우
+
 a.pr();
 pA->pr();
 
